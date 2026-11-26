@@ -1,1 +1,780 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Learn Chinese Characters with Stories | Learning Chinese</title>
+  <meta name="description" content="Explore all 270 Chinese pictographs in 12 themes. Learn characters through the stories behind their oldest forms, with pinyin, meanings and oracle bone insights." />
+  <meta name="keywords" content="learn Chinese characters, Chinese character stories, Chinese pictographs, oracle bone script, learn Chinese online, Chinese etymology, character origin, pinyin for beginners" />
+  <meta name="author" content="解字机 AK" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://zhangxiaov.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://zhangxiaov.github.io/" />
+  <link rel="alternate" hreflang="x-default" href="https://zhangxiaov.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="解字机 AK · Character Stories" />
+  <meta property="og:title" content="Learn Chinese Characters with Stories | Learning Chinese" />
+  <meta property="og:description" content="Chinese characters began as pictures. Learn them through the stories behind their oldest forms, with pinyin, meanings and oracle bone insights." />
+  <meta property="og:url" content="https://zhangxiaov.github.io/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Learn Chinese Characters with Stories | Learning Chinese" />
+  <meta name="twitter:description" content="Chinese characters began as pictures. Learn them through stories, from oracle bone forms to modern characters." />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://zhangxiaov.github.io/#website",
+        "url": "https://zhangxiaov.github.io/",
+        "name": "Learn Chinese Characters with Stories | Learning Chinese",
+        "alternateName": "解字机 AK · Character Stories",
+        "inLanguage": "en",
+        "description": "Explore all 270 Chinese pictographs in 12 themes, with pinyin, meanings and oracle bone insights.",
+        "publisher": { "@type": "Organization", "name": "解字机 AK" }
+      },
+      {
+        "@type": "ItemList",
+        "name": "Chinese pictographs to learn",
+        "numberOfItems": 270,
+        "inLanguage": "en",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "item": { "@type": "DefinedTerm", "name": "日 (rì, sun)", "termCode": "日", "description": "A picture of the sun with a bright centre." } },
+          { "@type": "ListItem", "position": 2, "item": { "@type": "DefinedTerm", "name": "羊 (yáng, sheep)", "termCode": "羊", "description": "A sheep head with two curling horns." } },
+          { "@type": "ListItem", "position": 3, "item": { "@type": "DefinedTerm", "name": "木 (mù, tree)", "termCode": "木", "description": "A tree with branches above and roots below." } },
+          { "@type": "ListItem", "position": 4, "item": { "@type": "DefinedTerm", "name": "口 (kǒu, mouth)", "termCode": "口", "description": "The shape of a speaking mouth." } },
+          { "@type": "ListItem", "position": 5, "item": { "@type": "DefinedTerm", "name": "目 (mù, eye)", "termCode": "目", "description": "The shape of an eye." } },
+          { "@type": "ListItem", "position": 6, "item": { "@type": "DefinedTerm", "name": "手 (shǒu, hand)", "termCode": "手", "description": "A hand with five fingers." } },
+          { "@type": "ListItem", "position": 7, "item": { "@type": "DefinedTerm", "name": "心 (xīn, heart)", "termCode": "心", "description": "The shape of a heart, and of emotion." } },
+          { "@type": "ListItem", "position": 8, "item": { "@type": "DefinedTerm", "name": "牛 (niú, ox)", "termCode": "牛", "description": "An ox head with two large horns and two ears." } },
+          { "@type": "ListItem", "position": 9, "item": { "@type": "DefinedTerm", "name": "犬 (quǎn, dog)", "termCode": "犬", "description": "A slim-waisted dog seen from the side." } },
+          { "@type": "ListItem", "position": 10, "item": { "@type": "DefinedTerm", "name": "舟 (zhōu, boat)", "termCode": "舟", "description": "A vessel that carries people over water." } }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #1f2328;
+      --paper: #ffffff;
+      --bg: #f5f1ea;
+      --accent: #8c3b2e;
+      --accent-soft: #f3e3df;
+      --muted: #6b7280;
+      --line: #e7dfd3;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.75;
+      padding: 0 16px 64px;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; }
+
+    header.site {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+    }
+    .brand { font-weight: 700; letter-spacing: .04em; }
+    .brand a { color: var(--ink); text-decoration: none; }
+    nav.top {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    nav.top a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .9rem;
+    }
+    nav.top a:hover { color: var(--accent); }
+    nav.top a.active { color: var(--accent); font-weight: 600; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 32px;
+      align-items: center;
+      padding: 52px 0 28px;
+    }
+    .eyebrow {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: .8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: -.02em;
+      margin-bottom: 16px;
+    }
+    h1 .han { color: var(--accent); }
+    .lead { font-size: 1.12rem; color: #404650; margin-bottom: 24px; max-width: 44ch; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 11px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .95rem;
+    }
+    .btn.primary { background: var(--accent); color: #fff; }
+    .btn.ghost { background: var(--paper); color: var(--ink); border: 1px solid var(--line); }
+
+    .hero-card {
+      background: var(--paper);
+      border-radius: var(--radius);
+      box-shadow: 0 0 20px rgba(0,0,0,.07);
+      padding: 22px;
+      text-align: center;
+    }
+    .hero-card svg { max-width: 240px; width: 100%; height: auto; }
+    .hero-card .modern { font-size: 4.2rem; line-height: 1; color: var(--accent); font-weight: 600; }
+    .hero-card .arrow { color: var(--muted); font-size: 1.1rem; margin: 8px 0; }
+    .hero-card figcaption { color: var(--muted); font-size: .85rem; margin-top: 12px; }
+
+    section.block {
+      background: var(--paper);
+      border-radius: var(--radius);
+      box-shadow: 0 0 20px rgba(0,0,0,.06);
+      padding: 32px 28px;
+      margin-top: 28px;
+    }
+    .section-head { margin-bottom: 22px; }
+    h2 {
+      font-size: 1.55rem;
+      line-height: 1.3;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+      margin-bottom: 8px;
+    }
+    .section-head p { color: var(--muted); max-width: 68ch; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .feature {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .feature .num {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: .8rem;
+      letter-spacing: .1em;
+    }
+    .feature h3 { font-size: 1.05rem; margin: 6px 0 8px; }
+    .feature p { font-size: .92rem; color: #4b5563; }
+
+    .group + .group { margin-top: 30px; }
+    .group h3 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+      color: var(--accent);
+    }
+    .group .hint { color: var(--muted); font-size: .88rem; margin-bottom: 14px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+      gap: 12px;
+    }
+    .char-card {
+      display: block;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+    }
+    .char-card:hover, .char-card:focus-visible {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      outline: none;
+    }
+    .char-card .zi { font-size: 2.1rem; line-height: 1.1; color: var(--accent); font-weight: 600; }
+    .char-card .pinyin { font-size: .9rem; color: var(--ink); font-weight: 600; }
+    .char-card .gloss { font-size: .85rem; color: var(--muted); }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .chip {
+      display: inline-block; padding: 5px 12px; border-radius: 999px;
+      background: var(--accent-soft); color: var(--accent);
+      font-size: .82rem; text-decoration: none;
+    }
+    .chip:hover, .chip:focus-visible { background: var(--accent); color: #fff; outline: none; }
+    .group .count {
+      display: inline-block; font-size: .75rem; font-weight: 600;
+      color: var(--muted); background: var(--bg); border-radius: 999px;
+      padding: 1px 8px; vertical-align: middle;
+    }
+    .char-card .variant { display: block; font-size: .75rem; color: var(--muted); }
+    .char-card .story {
+      font-size: .78rem;
+      color: #4b5563;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--line);
+    }
+
+    .steps { counter-reset: step; display: grid; gap: 14px; }
+    .step {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+    }
+    .step h3 { font-size: 1.02rem; margin-bottom: 2px; }
+    .step p { color: #4b5563; font-size: .93rem; }
+
+    .note {
+      margin-top: 22px;
+      padding: 14px 16px;
+      border: 1px dashed var(--line);
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+    footer.site {
+      margin-top: 36px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    footer.site a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 720px) {
+      .hero { grid-template-columns: 1fr; padding-top: 36px; }
+      .hero-card { max-width: 320px; margin: 0 auto; }
+      section.block { padding: 24px 18px; }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="wrap">
+
+    <header class="site">
+      <div class="brand"><a href="/">解字机 AK · Character Stories</a></div>
+      <nav class="top" aria-label="Main navigation">
+        <a href="#why">Why stories</a>
+        <a href="#characters">Pictographs</a>
+        <a href="#method">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" class="active" lang="en">English</a>
+        <a href="#" lang="zh">中文</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div>
+          <span class="eyebrow">Oracle Bone Script · Pictographs</span>
+          <h1>Learn Chinese Characters <span class="han">with Stories</span></h1>
+          <p class="lead">
+            Chinese characters began as pictures. Follow each glyph back to the thing it
+            drew — a sun, a sheep, a boat — and learning Chinese stops feeling like memorising strokes.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#characters">Explore pictographs</a>
+            <a class="btn ghost" href="#method">How it works</a>
+          </div>
+        </div>
+        <figure class="hero-card">
+          <svg viewBox="0 0 220 140" role="img" aria-label="Ancient drawing of a sheep head with two curling horns">
+            <g fill="none" stroke="#1f2328" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M110 118 L110 70" />
+              <path d="M110 72 C90 72 78 60 74 44 C70 28 54 24 44 34 C34 44 40 58 52 58 C62 58 64 48 58 44" />
+              <path d="M110 72 C130 72 142 60 146 44 C150 28 166 24 176 34 C186 44 180 58 168 58 C158 58 156 48 162 44" />
+              <path d="M78 74 L142 74" />
+              <path d="M84 90 L136 90" />
+            </g>
+          </svg>
+          <div class="arrow">picture → character</div>
+          <div class="modern" lang="zh-Hans">羊</div>
+          <figcaption>yáng · sheep — two curved horns became a written sign.</figcaption>
+        </figure>
+      </div>
+
+      <section class="block" id="why" aria-labelledby="why-title">
+        <div class="section-head">
+          <h2 id="why-title">Why learn Chinese through stories?</h2>
+          <p>A character is easier to remember when you can see the image and the idea behind it. The library below covers 270 pictographs.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <div class="num">01</div>
+            <h3>Start with pictures</h3>
+            <p>Pictographs are the oldest layer of Chinese writing: a direct sketch of the world around us.</p>
+          </div>
+          <div class="feature">
+            <div class="num">02</div>
+            <h3>Follow the evolution</h3>
+            <p>See how an ancient drawing simplified into the shape you read and write today.</p>
+          </div>
+          <div class="feature">
+            <div class="num">03</div>
+            <h3>Build connected meanings</h3>
+            <p>One image explains many compounds. Learn 羊 once, and characters built from it make sense.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="characters" aria-labelledby="characters-title">
+        <div class="section-head">
+          <h2 id="characters-title">Explore 270 Chinese pictographs</h2>
+          <p>
+            Every character in the database whose explanation is tagged 象形 (pictograph),
+            grouped into 12 themes. Each card opens a character story. Links are placeholders
+            for now while the individual stories are being written.
+          </p>
+          <nav class="chips" aria-label="Pictograph themes">
+            <a class="chip" href="#g-sky">Sky, light &amp; seasons</a>
+            <a class="chip" href="#g-earth">Earth, water &amp; landscape</a>
+            <a class="chip" href="#g-plants">Plants, trees &amp; farming</a>
+            <a class="chip" href="#g-animals">Animals &amp; birds</a>
+            <a class="chip" href="#g-body">The human body &amp; senses</a>
+            <a class="chip" href="#g-people">People, family &amp; posture</a>
+            <a class="chip" href="#g-tools">Tools, weapons &amp; crafts</a>
+            <a class="chip" href="#g-vessels">Vessels, containers &amp; ornaments</a>
+            <a class="chip" href="#g-shelter">Shelter, walls &amp; clothing</a>
+            <a class="chip" href="#g-signs">Numbers, signs &amp; stems</a>
+            <a class="chip" href="#g-actions">Actions &amp; movement</a>
+            <a class="chip" href="#g-rare">Rare &amp; uncertain forms</a>
+          </nav>
+        </div>
+
+        <div class="group" id="g-sky">
+          <h3>Sky, light &amp; seasons <span class="count">11</span></h3>
+          <p class="hint">Sun, moon, clouds, fire and the turning seasons.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="日 rì, sun: A radiant sun with a bright centre."><span class="zi">日</span><span class="pinyin">rì</span><span class="gloss">sun</span><span class="story">A radiant sun with a bright centre.</span></a>
+            <a class="char-card" href="#" aria-label="夕 xī, evening moon: A crescent moon with a wide open gap."><span class="zi">夕</span><span class="pinyin">xī</span><span class="gloss">evening moon</span><span class="story">A crescent moon with a wide open gap.</span></a>
+            <a class="char-card" href="#" aria-label="云 yún, cloud: Curling clouds rising into the air."><span class="zi">云</span><span class="pinyin">yún</span><span class="gloss">cloud</span><span class="story">Curling clouds rising into the air.</span></a>
+            <a class="char-card" href="#" aria-label="气 qì, air · breath: Streams of air, wind and vapour flowing sideways."><span class="zi">气</span><span class="pinyin">qì</span><span class="gloss">air · breath</span><span class="story">Streams of air, wind and vapour flowing sideways.</span></a>
+            <a class="char-card" href="#" aria-label="晶 jīng, stars · bright: Many bright points gathered together."><span class="zi">晶</span><span class="pinyin">jīng</span><span class="gloss">stars · bright</span><span class="story">Many bright points gathered together.</span></a>
+            <a class="char-card" href="#" aria-label="秋 qiū, autumn: Moths drawn towards the fire of late autumn."><span class="zi">秋</span><span class="pinyin">qiū</span><span class="gloss">autumn</span><span class="story">Moths drawn towards the fire of late autumn.</span></a>
+            <a class="char-card" href="#" aria-label="冬 dōng, winter: Trees stripped of fruit, leaving two small stems."><span class="zi">冬</span><span class="pinyin">dōng</span><span class="gloss">winter</span><span class="story">Trees stripped of fruit, leaving two small stems.</span></a>
+            <a class="char-card" href="#" aria-label="电 diàn, lightning: Lightning flashing from sky to ground."><span class="zi">电</span><span class="pinyin">diàn</span><span class="gloss">lightning</span><span class="story">Lightning flashing from sky to ground.</span></a>
+            <a class="char-card" href="#" aria-label="申 shēn, lightning: Lightning running from the sky to the earth."><span class="zi">申</span><span class="pinyin">shēn</span><span class="gloss">lightning</span><span class="story">Lightning running from the sky to the earth.</span></a>
+            <a class="char-card" href="#" aria-label="火 huǒ, fire: Flames rising in separate tongues."><span class="zi">火</span><span class="pinyin">huǒ</span><span class="gloss">fire</span><span class="story">Flames rising in separate tongues.</span></a>
+            <a class="char-card" href="#" aria-label="㣎 mù, starlight: Rays of starlight spreading in all directions."><span class="zi">㣎</span><span class="pinyin">mù</span><span class="gloss">starlight</span><span class="story">Rays of starlight spreading in all directions.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-earth">
+          <h3>Earth, water &amp; landscape <span class="count">11</span></h3>
+          <p class="hint">Land, water, roads and the shape of the ground.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="土 tǔ, earth · soil: Earth with a lump of stone or soil above it."><span class="zi">土</span><span class="pinyin">tǔ</span><span class="gloss">earth · soil</span><span class="story">Earth with a lump of stone or soil above it.</span></a>
+            <a class="char-card" href="#" aria-label="田 tián, field: Land divided by paths into square plots."><span class="zi">田</span><span class="pinyin">tián</span><span class="gloss">field</span><span class="story">Land divided by paths into square plots.</span></a>
+            <a class="char-card" href="#" aria-label="川 chuān, river: Long streams flowing one after another."><span class="zi">川</span><span class="pinyin">chuān</span><span class="gloss">river</span><span class="story">Long streams flowing one after another.</span></a>
+            <a class="char-card" href="#" aria-label="乙 yǐ, flowing line: A winding current of water or air."><span class="zi">乙</span><span class="pinyin">yǐ</span><span class="gloss">flowing line</span><span class="story">A winding current of water or air.</span></a>
+            <a class="char-card" href="#" aria-label="彳 chì, road: A path extending to the right from an opening."><span class="zi">彳</span><span class="pinyin">chì</span><span class="gloss">road</span><span class="story">A path extending to the right from an opening.</span></a>
+            <a class="char-card" href="#" aria-label="山 shān, mountain: Flame-like peaks, or a slope of layered stone."><span class="zi">山</span><span class="pinyin">shān</span><span class="gloss">mountain</span><span class="story">Flame-like peaks, or a slope of layered stone.</span></a>
+            <a class="char-card" href="#" aria-label="厂 ān, cliff: A slanted stone lying on the ground."><span class="zi">厂</span><span class="pinyin">ān</span><span class="gloss">cliff</span><span class="story">A slanted stone lying on the ground.</span></a>
+            <a class="char-card" href="#" aria-label="阜 fù, mound · hill: Layered slopes of stone stacked into a high hill."><span class="zi">阜</span><span class="pinyin">fù</span><span class="gloss">mound · hill</span><span class="story">Layered slopes of stone stacked into a high hill.</span></a>
+            <a class="char-card" href="#" aria-label="凸 tū, raised ground: Earth or stone sticking up above the ground."><span class="zi">凸</span><span class="pinyin">tū</span><span class="gloss">raised ground</span><span class="story">Earth or stone sticking up above the ground.</span></a>
+            <a class="char-card" href="#" aria-label="凹 āo, hollow: A bowl, basin or pit with an indentation."><span class="zi">凹</span><span class="pinyin">āo</span><span class="gloss">hollow</span><span class="story">A bowl, basin or pit with an indentation.</span></a>
+            <a class="char-card" href="#" aria-label="回 huí, whirlpool: A spiral of curling, swirling water."><span class="zi">回</span><span class="pinyin">huí</span><span class="gloss">whirlpool</span><span class="story">A spiral of curling, swirling water.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-plants">
+          <h3>Plants, trees &amp; farming <span class="count">22</span></h3>
+          <p class="hint">Sprouts, trees, crops and everything that grows.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="屮 chè, sprout: A young plant with leaves on both sides."><span class="zi">屮</span><span class="pinyin">chè</span><span class="gloss">sprout</span><span class="story">A young plant with leaves on both sides.</span></a>
+            <a class="char-card" href="#" aria-label="卉 huì, grasses: Many grass sprouts growing together."><span class="zi">卉</span><span class="pinyin">huì</span><span class="gloss">grasses</span><span class="story">Many grass sprouts growing together.</span></a>
+            <a class="char-card" href="#" aria-label="尒 ěr, roots: Tree roots spreading in every direction."><span class="zi">尒</span><span class="pinyin">ěr</span><span class="gloss">roots</span><span class="story">Tree roots spreading in every direction.</span></a>
+            <a class="char-card" href="#" aria-label="余 yú, thorn: The sharp pointed tip of a thorn."><span class="zi">余</span><span class="pinyin">yú</span><span class="gloss">thorn</span><span class="story">The sharp pointed tip of a thorn.</span></a>
+            <a class="char-card" href="#" aria-label="卜 bo, branch: A branch or stick slanting from a tree side."><span class="zi">卜</span><span class="pinyin">bo</span><span class="gloss">branch</span><span class="story">A branch or stick slanting from a tree side.</span></a>
+            <a class="char-card" href="#" aria-label="竹 zhú, bamboo: A tough stalk that bends but will not break."><span class="zi">竹</span><span class="pinyin">zhú</span><span class="gloss">bamboo</span><span class="story">A tough stalk that bends but will not break.</span></a>
+            <a class="char-card" href="#" aria-label="來 lái, come · wheat: Tree leaves hanging down."><span class="zi">來</span><span class="pinyin">lái</span><span class="gloss">come · wheat</span><span class="variant">also 来</span><span class="story">Tree leaves hanging down.</span></a>
+            <a class="char-card" href="#" aria-label="木 mù, tree: A tree with branches above and roots below."><span class="zi">木</span><span class="pinyin">mù</span><span class="gloss">tree</span><span class="story">A tree with branches above and roots below.</span></a>
+            <a class="char-card" href="#" aria-label="林 lín, forest: Dense trees growing together."><span class="zi">林</span><span class="pinyin">lín</span><span class="gloss">forest</span><span class="story">Dense trees growing together.</span></a>
+            <a class="char-card" href="#" aria-label="才 cái, stake: A stick driven into the ground."><span class="zi">才</span><span class="pinyin">cái</span><span class="gloss">stake</span><span class="story">A stick driven into the ground.</span></a>
+            <a class="char-card" href="#" aria-label="桑 sāng, mulberry: A tree with many branching leaves."><span class="zi">桑</span><span class="pinyin">sāng</span><span class="gloss">mulberry</span><span class="story">A tree with many branching leaves.</span></a>
+            <a class="char-card" href="#" aria-label="耒 lěi, plough: A hand-held plough turning the soil."><span class="zi">耒</span><span class="pinyin">lěi</span><span class="gloss">plough</span><span class="story">A hand-held plough turning the soil.</span></a>
+            <a class="char-card" href="#" aria-label="齊 qí, even · equal: Crop tips standing in an even line."><span class="zi">齊</span><span class="pinyin">qí</span><span class="gloss">even · equal</span><span class="variant">also 齐</span><span class="story">Crop tips standing in an even line.</span></a>
+            <a class="char-card" href="#" aria-label="禾 hé, grain: A young cereal plant with drooping ears."><span class="zi">禾</span><span class="pinyin">hé</span><span class="gloss">grain</span><span class="story">A young cereal plant with drooping ears.</span></a>
+            <a class="char-card" href="#" aria-label="韭 jiǔ, chives: A clump of chives growing as one bunch."><span class="zi">韭</span><span class="pinyin">jiǔ</span><span class="gloss">chives</span><span class="story">A clump of chives growing as one bunch.</span></a>
+            <a class="char-card" href="#" aria-label="瓜 guā, melon: A round fruit hanging between two leaves."><span class="zi">瓜</span><span class="pinyin">guā</span><span class="gloss">melon</span><span class="story">A round fruit hanging between two leaves.</span></a>
+            <a class="char-card" href="#" aria-label="未 wèi, not yet: A tender shoot before it becomes a branch."><span class="zi">未</span><span class="pinyin">wèi</span><span class="gloss">not yet</span><span class="story">A tender shoot before it becomes a branch.</span></a>
+            <a class="char-card" href="#" aria-label="癸 guǐ, okra · last: A shape narrowing towards the middle, like okra."><span class="zi">癸</span><span class="pinyin">guǐ</span><span class="gloss">okra · last</span><span class="story">A shape narrowing towards the middle, like okra.</span></a>
+            <a class="char-card" href="#" aria-label="世 shì, generation: Three tiers of leaves on a plant."><span class="zi">世</span><span class="pinyin">shì</span><span class="gloss">generation</span><span class="story">Three tiers of leaves on a plant.</span></a>
+            <a class="char-card" href="#" aria-label="爾 ěr, network: Tree roots crossing like a net."><span class="zi">爾</span><span class="pinyin">ěr</span><span class="gloss">network</span><span class="variant">also 尔</span><span class="story">Tree roots crossing like a net.</span></a>
+            <a class="char-card" href="#" aria-label="习 xí, practice: The shape of a leaf."><span class="zi">习</span><span class="pinyin">xí</span><span class="gloss">practice</span><span class="story">The shape of a leaf.</span></a>
+            <a class="char-card" href="#" aria-label="夲 tāo, tip: A sharp pointed end."><span class="zi">夲</span><span class="pinyin">tāo</span><span class="gloss">tip</span><span class="story">A sharp pointed end.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-animals">
+          <h3>Animals &amp; birds <span class="count">39</span></h3>
+          <p class="hint">Farm animals, wild beasts, birds, fish and insects.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="牛 niú, ox: An ox head with two horns and two ears."><span class="zi">牛</span><span class="pinyin">niú</span><span class="gloss">ox</span><span class="story">An ox head with two horns and two ears.</span></a>
+            <a class="char-card" href="#" aria-label="羊 yáng, sheep: A sheep head with two curling horns."><span class="zi">羊</span><span class="pinyin">yáng</span><span class="gloss">sheep</span><span class="story">A sheep head with two curling horns.</span></a>
+            <a class="char-card" href="#" aria-label="犬 quǎn, dog: A slim-waisted dog seen from the side."><span class="zi">犬</span><span class="pinyin">quǎn</span><span class="gloss">dog</span><span class="story">A slim-waisted dog seen from the side.</span></a>
+            <a class="char-card" href="#" aria-label="豕 shǐ, pig: The shape of a pig."><span class="zi">豕</span><span class="pinyin">shǐ</span><span class="gloss">pig</span><span class="story">The shape of a pig.</span></a>
+            <a class="char-card" href="#" aria-label="豖 chù, pig teats: A pig belly with two rows of teats."><span class="zi">豖</span><span class="pinyin">chù</span><span class="gloss">pig teats</span><span class="story">A pig belly with two rows of teats.</span></a>
+            <a class="char-card" href="#" aria-label="豩 bīn, two pigs: Two pigs side by side."><span class="zi">豩</span><span class="pinyin">bīn</span><span class="gloss">two pigs</span><span class="story">Two pigs side by side.</span></a>
+            <a class="char-card" href="#" aria-label="豸 zhì, wildcat: A keen-eyed hunter that stalks at night."><span class="zi">豸</span><span class="pinyin">zhì</span><span class="gloss">wildcat</span><span class="story">A keen-eyed hunter that stalks at night.</span></a>
+            <a class="char-card" href="#" aria-label="象 xiàng, elephant: The shape of an elephant."><span class="zi">象</span><span class="pinyin">xiàng</span><span class="gloss">elephant</span><span class="story">The shape of an elephant.</span></a>
+            <a class="char-card" href="#" aria-label="馬 mǎ, horse: A running horse with a flowing mane."><span class="zi">馬</span><span class="pinyin">mǎ</span><span class="gloss">horse</span><span class="variant">also 马</span><span class="story">A running horse with a flowing mane.</span></a>
+            <a class="char-card" href="#" aria-label="鹿 lù, deer: A deer with branching antlers."><span class="zi">鹿</span><span class="pinyin">lù</span><span class="gloss">deer</span><span class="story">A deer with branching antlers.</span></a>
+            <a class="char-card" href="#" aria-label="兔 tù, rabbit: A rabbit with long ears."><span class="zi">兔</span><span class="pinyin">tù</span><span class="gloss">rabbit</span><span class="story">A rabbit with long ears.</span></a>
+            <a class="char-card" href="#" aria-label="萈 huán, wide-horned animal: An animal with horns spreading far apart."><span class="zi">萈</span><span class="pinyin">huán</span><span class="gloss">wide-horned animal</span><span class="story">An animal with horns spreading far apart.</span></a>
+            <a class="char-card" href="#" aria-label="鼠 shǔ, rat: A rat with large front teeth that gnaws grain."><span class="zi">鼠</span><span class="pinyin">shǔ</span><span class="gloss">rat</span><span class="story">A rat with large front teeth that gnaws grain.</span></a>
+            <a class="char-card" href="#" aria-label="能 néng, crocodile · capable: A crawling crocodile or python."><span class="zi">能</span><span class="pinyin">néng</span><span class="gloss">crocodile · capable</span><span class="story">A crawling crocodile or python.</span></a>
+            <a class="char-card" href="#" aria-label="魚 yú, fish: A swimming fish with a net-like scale pattern."><span class="zi">魚</span><span class="pinyin">yú</span><span class="gloss">fish</span><span class="variant">also 鱼</span><span class="story">A swimming fish with a net-like scale pattern.</span></a>
+            <a class="char-card" href="#" aria-label="鯀 gǔn, fishing: A hand holding a line to catch fish."><span class="zi">鯀</span><span class="pinyin">gǔn</span><span class="gloss">fishing</span><span class="variant">also 鲧</span><span class="story">A hand holding a line to catch fish.</span></a>
+            <a class="char-card" href="#" aria-label="燕 yàn, swallow: A swallow darting upward in a clear sky."><span class="zi">燕</span><span class="pinyin">yàn</span><span class="gloss">swallow</span><span class="story">A swallow darting upward in a clear sky.</span></a>
+            <a class="char-card" href="#" aria-label="鳥 niǎo, bird: A winged bird made for high flight."><span class="zi">鳥</span><span class="pinyin">niǎo</span><span class="gloss">bird</span><span class="variant">also 鸟</span><span class="story">A winged bird made for high flight.</span></a>
+            <a class="char-card" href="#" aria-label="烏 wū, crow: A loud, cawing crow."><span class="zi">烏</span><span class="pinyin">wū</span><span class="gloss">crow</span><span class="variant">also 乌</span><span class="story">A loud, cawing crow.</span></a>
+            <a class="char-card" href="#" aria-label="隹 zhuī, short-tailed bird: A winged bird that can fly high."><span class="zi">隹</span><span class="pinyin">zhuī</span><span class="gloss">short-tailed bird</span><span class="story">A winged bird that can fly high.</span></a>
+            <a class="char-card" href="#" aria-label="雚 guàn, owl: The shape of an owl."><span class="zi">雚</span><span class="pinyin">guàn</span><span class="gloss">owl</span><span class="story">The shape of an owl.</span></a>
+            <a class="char-card" href="#" aria-label="雈 huán, horned owl: An owl with horn-like feathers and deep eyes."><span class="zi">雈</span><span class="pinyin">huán</span><span class="gloss">horned owl</span><span class="story">An owl with horn-like feathers and deep eyes.</span></a>
+            <a class="char-card" href="#" aria-label="羽 yǔ, feather: A single feather, or the fibres of a broom."><span class="zi">羽</span><span class="pinyin">yǔ</span><span class="gloss">feather</span><span class="story">A single feather, or the fibres of a broom.</span></a>
+            <a class="char-card" href="#" aria-label="虍 hū, tiger&#x27;s mouth: The wide mouth of a carnivore."><span class="zi">虍</span><span class="pinyin">hū</span><span class="gloss">tiger&#x27;s mouth</span><span class="story">The wide mouth of a carnivore.</span></a>
+            <a class="char-card" href="#" aria-label="虎 hǔ, tiger: A tiger with a huge open mouth."><span class="zi">虎</span><span class="pinyin">hǔ</span><span class="gloss">tiger</span><span class="story">A tiger with a huge open mouth.</span></a>
+            <a class="char-card" href="#" aria-label="角 jiǎo, horn: An animal horn, or a braid at the back of the head."><span class="zi">角</span><span class="pinyin">jiǎo</span><span class="gloss">horn</span><span class="story">An animal horn, or a braid at the back of the head.</span></a>
+            <a class="char-card" href="#" aria-label="毛 máo, hair · fur: Tail fur, roots, or a fish backbone."><span class="zi">毛</span><span class="pinyin">máo</span><span class="gloss">hair · fur</span><span class="story">Tail fur, roots, or a fish backbone.</span></a>
+            <a class="char-card" href="#" aria-label="朱 zhū, spider: The shape of a spider."><span class="zi">朱</span><span class="pinyin">zhū</span><span class="gloss">spider</span><span class="story">The shape of a spider.</span></a>
+            <a class="char-card" href="#" aria-label="予 yǔ, scales: Overlapping scales gathered together."><span class="zi">予</span><span class="pinyin">yǔ</span><span class="gloss">scales</span><span class="story">Overlapping scales gathered together.</span></a>
+            <a class="char-card" href="#" aria-label="昆 kūn, same · equal: Two legs or claws of equal length."><span class="zi">昆</span><span class="pinyin">kūn</span><span class="gloss">same · equal</span><span class="story">Two legs or claws of equal length.</span></a>
+            <a class="char-card" href="#" aria-label="九 jiǔ, nine · tail: The curved tail at the end of an animal&#x27;s spine."><span class="zi">九</span><span class="pinyin">jiǔ</span><span class="gloss">nine · tail</span><span class="story">The curved tail at the end of an animal&#x27;s spine.</span></a>
+            <a class="char-card" href="#" aria-label="萬 wàn, scorpion: A scorpion lifting its tail."><span class="zi">萬</span><span class="pinyin">wàn</span><span class="gloss">scorpion</span><span class="variant">also 万</span><span class="story">A scorpion lifting its tail.</span></a>
+            <a class="char-card" href="#" aria-label="巳 sì, tadpole: A young tadpole."><span class="zi">巳</span><span class="pinyin">sì</span><span class="gloss">tadpole</span><span class="story">A young tadpole.</span></a>
+            <a class="char-card" href="#" aria-label="辛 xīn, bitter · scales: Triangle scales overlapping like fish scales."><span class="zi">辛</span><span class="pinyin">xīn</span><span class="gloss">bitter · scales</span><span class="story">Triangle scales overlapping like fish scales.</span></a>
+            <a class="char-card" href="#" aria-label="虫 chóng, insect: A tiny, pointed, legless larva."><span class="zi">虫</span><span class="pinyin">chóng</span><span class="gloss">insect</span><span class="story">A tiny, pointed, legless larva.</span></a>
+            <a class="char-card" href="#" aria-label="它 tā, snake: A snake with a twisting body."><span class="zi">它</span><span class="pinyin">tā</span><span class="gloss">snake</span><span class="story">A snake with a twisting body.</span></a>
+            <a class="char-card" href="#" aria-label="龜 guī, turtle: The shape of a turtle."><span class="zi">龜</span><span class="pinyin">guī</span><span class="gloss">turtle</span><span class="variant">also 龟</span><span class="story">The shape of a turtle.</span></a>
+            <a class="char-card" href="#" aria-label="黽 miǎn, frog: A frog or toad."><span class="zi">黽</span><span class="pinyin">miǎn</span><span class="gloss">frog</span><span class="variant">also 黾</span><span class="story">A frog or toad.</span></a>
+            <a class="char-card" href="#" aria-label="求 qiú, fur · seek: The hide of a hunted animal, with head, ears and tail."><span class="zi">求</span><span class="pinyin">qiú</span><span class="gloss">fur · seek</span><span class="story">The hide of a hunted animal, with head, ears and tail.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-body">
+          <h3>The human body &amp; senses <span class="count">31</span></h3>
+          <p class="hint">Eyes, hands, feet and the parts that make us human.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="口 kǒu, mouth: A mouth that can make sounds."><span class="zi">口</span><span class="pinyin">kǒu</span><span class="gloss">mouth</span><span class="story">A mouth that can make sounds.</span></a>
+            <a class="char-card" href="#" aria-label="止 zhǐ, foot: A foot used for walking."><span class="zi">止</span><span class="pinyin">zhǐ</span><span class="gloss">foot</span><span class="story">A foot used for walking.</span></a>
+            <a class="char-card" href="#" aria-label="牙 yá, tooth: Long upper and lower fangs facing each other."><span class="zi">牙</span><span class="pinyin">yá</span><span class="gloss">tooth</span><span class="story">Long upper and lower fangs facing each other.</span></a>
+            <a class="char-card" href="#" aria-label="疋 pǐ, thigh: A thick, full thigh like a pestle."><span class="zi">疋</span><span class="pinyin">pǐ</span><span class="gloss">thigh</span><span class="story">A thick, full thigh like a pestle.</span></a>
+            <a class="char-card" href="#" aria-label="爪 zhǎo, claw: A hand, bird claw or bamboo-like claw."><span class="zi">爪</span><span class="pinyin">zhǎo</span><span class="gloss">claw</span><span class="story">A hand, bird claw or bamboo-like claw.</span></a>
+            <a class="char-card" href="#" aria-label="又 yòu, right hand: The shape of a right hand."><span class="zi">又</span><span class="pinyin">yòu</span><span class="gloss">right hand</span><span class="story">The shape of a right hand.</span></a>
+            <a class="char-card" href="#" aria-label="厷 gōng, upper arm: Strong muscle on the upper arm."><span class="zi">厷</span><span class="pinyin">gōng</span><span class="gloss">upper arm</span><span class="story">Strong muscle on the upper arm.</span></a>
+            <a class="char-card" href="#" aria-label="臣 chén, eye: The shape of an eye."><span class="zi">臣</span><span class="pinyin">chén</span><span class="gloss">eye</span><span class="story">The shape of an eye.</span></a>
+            <a class="char-card" href="#" aria-label="目 mù, eye: The outline of an eye."><span class="zi">目</span><span class="pinyin">mù</span><span class="gloss">eye</span><span class="story">The outline of an eye.</span></a>
+            <a class="char-card" href="#" aria-label="眉 méi, eyebrow: A brow stroke above the eye."><span class="zi">眉</span><span class="pinyin">méi</span><span class="gloss">eyebrow</span><span class="story">A brow stroke above the eye.</span></a>
+            <a class="char-card" href="#" aria-label="自 zì, nose: The nose in the middle of the face."><span class="zi">自</span><span class="pinyin">zì</span><span class="gloss">nose</span><span class="story">The nose in the middle of the face.</span></a>
+            <a class="char-card" href="#" aria-label="冎 guǎ, bones: Jointed bones that can bend and stretch."><span class="zi">冎</span><span class="pinyin">guǎ</span><span class="gloss">bones</span><span class="story">Jointed bones that can bend and stretch.</span></a>
+            <a class="char-card" href="#" aria-label="丂 kǎo, hanging arm: A long arm hanging on one side of the body."><span class="zi">丂</span><span class="pinyin">kǎo</span><span class="gloss">hanging arm</span><span class="story">A long arm hanging on one side of the body.</span></a>
+            <a class="char-card" href="#" aria-label="身 shēn, body: The solid trunk that holds the limbs."><span class="zi">身</span><span class="pinyin">shēn</span><span class="gloss">body</span><span class="story">The solid trunk that holds the limbs.</span></a>
+            <a class="char-card" href="#" aria-label="面 miàn, face: The face around the eyes and nose."><span class="zi">面</span><span class="pinyin">miàn</span><span class="gloss">face</span><span class="story">The face around the eyes and nose.</span></a>
+            <a class="char-card" href="#" aria-label="万 wàn, back: One side of the back below the shoulder, with ribs."><span class="zi">万</span><span class="pinyin">wàn</span><span class="gloss">back</span><span class="variant">also 丏</span><span class="story">One side of the back below the shoulder, with ribs.</span></a>
+            <a class="char-card" href="#" aria-label="首 shǒu, head: A head with hair, mouth, nose and eyes."><span class="zi">首</span><span class="pinyin">shǒu</span><span class="gloss">head</span><span class="story">A head with hair, mouth, nose and eyes.</span></a>
+            <a class="char-card" href="#" aria-label="髟 biāo, long hair: A person with long flowing hair."><span class="zi">髟</span><span class="pinyin">biāo</span><span class="gloss">long hair</span><span class="story">A person with long flowing hair.</span></a>
+            <a class="char-card" href="#" aria-label="長 zhǎng, long · grow: Long hair flowing down behind the head."><span class="zi">長</span><span class="pinyin">zhǎng</span><span class="gloss">long · grow</span><span class="variant">also 长</span><span class="story">Long hair flowing down behind the head.</span></a>
+            <a class="char-card" href="#" aria-label="勹 bāo, spine: A long spine made of many joints."><span class="zi">勹</span><span class="pinyin">bāo</span><span class="gloss">spine</span><span class="story">A long spine made of many joints.</span></a>
+            <a class="char-card" href="#" aria-label="心 xīn, heart: The shape of a heart, and of emotion."><span class="zi">心</span><span class="pinyin">xīn</span><span class="gloss">heart</span><span class="story">The shape of a heart, and of emotion.</span></a>
+            <a class="char-card" href="#" aria-label="囟 xìn, bag · fontanelle: A cloth bag tied at one end."><span class="zi">囟</span><span class="pinyin">xìn</span><span class="gloss">bag · fontanelle</span><span class="story">A cloth bag tied at one end.</span></a>
+            <a class="char-card" href="#" aria-label="耳 ěr, ear: The outline of an ear."><span class="zi">耳</span><span class="pinyin">ěr</span><span class="gloss">ear</span><span class="story">The outline of an ear.</span></a>
+            <a class="char-card" href="#" aria-label="手 shǒu, hand: A hand showing five fingers."><span class="zi">手</span><span class="pinyin">shǒu</span><span class="gloss">hand</span><span class="story">A hand showing five fingers.</span></a>
+            <a class="char-card" href="#" aria-label="直 zhí, straight: An eye looking straight ahead."><span class="zi">直</span><span class="pinyin">zhí</span><span class="gloss">straight</span><span class="story">An eye looking straight ahead.</span></a>
+            <a class="char-card" href="#" aria-label="力 lì, strength: Veins that bulge on the hand when straining."><span class="zi">力</span><span class="pinyin">lì</span><span class="gloss">strength</span><span class="story">Veins that bulge on the hand when straining.</span></a>
+            <a class="char-card" href="#" aria-label="尤 yóu, extra finger: A hand with an extra finger on one side."><span class="zi">尤</span><span class="pinyin">yóu</span><span class="gloss">extra finger</span><span class="story">A hand with an extra finger on one side.</span></a>
+            <a class="char-card" href="#" aria-label="㕚 zhǎo, fingernails: The nails on a hand."><span class="zi">㕚</span><span class="pinyin">zhǎo</span><span class="gloss">fingernails</span><span class="story">The nails on a hand.</span></a>
+            <a class="char-card" href="#" aria-label="㠯 yǐ, buttocks: A body part with two large ends."><span class="zi">㠯</span><span class="pinyin">yǐ</span><span class="gloss">buttocks</span><span class="story">A body part with two large ends.</span></a>
+            <a class="char-card" href="#" aria-label="冉 rǎn, beard: Thick hair from the cheeks to the chin."><span class="zi">冉</span><span class="pinyin">rǎn</span><span class="gloss">beard</span><span class="story">Thick hair from the cheeks to the chin.</span></a>
+            <a class="char-card" href="#" aria-label="而 ér, beard: A long beard flowing down like a river."><span class="zi">而</span><span class="pinyin">ér</span><span class="gloss">beard</span><span class="story">A long beard flowing down like a river.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-people">
+          <h3>People, family &amp; posture <span class="count">39</span></h3>
+          <p class="hint">Postures, family roles and people in motion.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="人 rén, person: An upright person seen from the side."><span class="zi">人</span><span class="pinyin">rén</span><span class="gloss">person</span><span class="story">An upright person seen from the side.</span></a>
+            <a class="char-card" href="#" aria-label="屰 nì, inverted person: A person standing upside down."><span class="zi">屰</span><span class="pinyin">nì</span><span class="gloss">inverted person</span><span class="story">A person standing upside down.</span></a>
+            <a class="char-card" href="#" aria-label="父 fù, elder · father: An elder leaning on a staff."><span class="zi">父</span><span class="pinyin">fù</span><span class="gloss">elder · father</span><span class="story">An elder leaning on a staff.</span></a>
+            <a class="char-card" href="#" aria-label="尹 yǐn, hold · ruler: A hand holding a long stick or rod."><span class="zi">尹</span><span class="pinyin">yǐn</span><span class="gloss">hold · ruler</span><span class="story">A hand holding a long stick or rod.</span></a>
+            <a class="char-card" href="#" aria-label="夬 guài, ring · decide: A ring slipped over a finger."><span class="zi">夬</span><span class="pinyin">guài</span><span class="gloss">ring · decide</span><span class="story">A ring slipped over a finger.</span></a>
+            <a class="char-card" href="#" aria-label="奇 qí, ride · strange: A person straddling a horse."><span class="zi">奇</span><span class="pinyin">qí</span><span class="gloss">ride · strange</span><span class="story">A person straddling a horse.</span></a>
+            <a class="char-card" href="#" aria-label="入 rù, enter: Only the legs showing while crawling into a hole."><span class="zi">入</span><span class="pinyin">rù</span><span class="gloss">enter</span><span class="story">Only the legs showing while crawling into a hole.</span></a>
+            <a class="char-card" href="#" aria-label="何 hé, carry: A person carrying something on the shoulder."><span class="zi">何</span><span class="pinyin">hé</span><span class="gloss">carry</span><span class="story">A person carrying something on the shoulder.</span></a>
+            <a class="char-card" href="#" aria-label="匕 bǐ, prone person: A person lying face down."><span class="zi">匕</span><span class="pinyin">bǐ</span><span class="gloss">prone person</span><span class="story">A person lying face down.</span></a>
+            <a class="char-card" href="#" aria-label="北 běi, back to back: Two people turned away from each other."><span class="zi">北</span><span class="pinyin">běi</span><span class="gloss">back to back</span><span class="story">Two people turned away from each other.</span></a>
+            <a class="char-card" href="#" aria-label="兒 ér, child: A baby whose soft spot has not closed yet."><span class="zi">兒</span><span class="pinyin">ér</span><span class="gloss">child</span><span class="variant">also 儿</span><span class="story">A baby whose soft spot has not closed yet.</span></a>
+            <a class="char-card" href="#" aria-label="卩 jié, kneeling person: A person sitting low with bent knees."><span class="zi">卩</span><span class="pinyin">jié</span><span class="gloss">kneeling person</span><span class="story">A person sitting low with bent knees.</span></a>
+            <a class="char-card" href="#" aria-label="厃 wěi, person: A person seen standing upright."><span class="zi">厃</span><span class="pinyin">wěi</span><span class="gloss">person</span><span class="story">A person seen standing upright.</span></a>
+            <a class="char-card" href="#" aria-label="黑 hēi, dark: A head covered with cloth so nothing can be seen."><span class="zi">黑</span><span class="pinyin">hēi</span><span class="gloss">dark</span><span class="story">A head covered with cloth so nothing can be seen.</span></a>
+            <a class="char-card" href="#" aria-label="大 dà, big: A person with arms and legs spread wide."><span class="zi">大</span><span class="pinyin">dà</span><span class="gloss">big</span><span class="story">A person with arms and legs spread wide.</span></a>
+            <a class="char-card" href="#" aria-label="夭 yāo, dancing: A person dancing and swaying the arms."><span class="zi">夭</span><span class="pinyin">yāo</span><span class="gloss">dancing</span><span class="story">A person dancing and swaying the arms.</span></a>
+            <a class="char-card" href="#" aria-label="交 jiāo, crossed: A person with legs crossed."><span class="zi">交</span><span class="pinyin">jiāo</span><span class="gloss">crossed</span><span class="story">A person with legs crossed.</span></a>
+            <a class="char-card" href="#" aria-label="亢 kàng, striding: A person pushing a leg outward with effort."><span class="zi">亢</span><span class="pinyin">kàng</span><span class="gloss">striding</span><span class="story">A person pushing a leg outward with effort.</span></a>
+            <a class="char-card" href="#" aria-label="奚 xī, braid: A person with a very long braid."><span class="zi">奚</span><span class="pinyin">xī</span><span class="gloss">braid</span><span class="story">A person with a very long braid.</span></a>
+            <a class="char-card" href="#" aria-label="女 nǚ, woman: A kneeling woman with crossed hands, sewing cloth."><span class="zi">女</span><span class="pinyin">nǚ</span><span class="gloss">woman</span><span class="story">A kneeling woman with crossed hands, sewing cloth.</span></a>
+            <a class="char-card" href="#" aria-label="母 mǔ, mother: A woman with breasts for nursing a child."><span class="zi">母</span><span class="pinyin">mǔ</span><span class="gloss">mother</span><span class="story">A woman with breasts for nursing a child.</span></a>
+            <a class="char-card" href="#" aria-label="姦 jiān, together: Several women close together, hand in hand."><span class="zi">姦</span><span class="pinyin">jiān</span><span class="gloss">together</span><span class="story">Several women close together, hand in hand.</span></a>
+            <a class="char-card" href="#" aria-label="氏 shì, clan · prone: A person lying down, an old form of 匕."><span class="zi">氏</span><span class="pinyin">shì</span><span class="gloss">clan · prone</span><span class="story">A person lying down, an old form of 匕.</span></a>
+            <a class="char-card" href="#" aria-label="化 huà, change: A person turning from front to back and back again."><span class="zi">化</span><span class="pinyin">huà</span><span class="gloss">change</span><span class="story">A person turning from front to back and back again.</span></a>
+            <a class="char-card" href="#" aria-label="疑 yí, doubt: A person with an open mouth, uncertain."><span class="zi">疑</span><span class="pinyin">yí</span><span class="gloss">doubt</span><span class="story">A person with an open mouth, uncertain.</span></a>
+            <a class="char-card" href="#" aria-label="釁 xìn, wash · ceremony: A person washing and combing hair at a basin."><span class="zi">釁</span><span class="pinyin">xìn</span><span class="gloss">wash · ceremony</span><span class="variant">also 衅</span><span class="story">A person washing and combing hair at a basin.</span></a>
+            <a class="char-card" href="#" aria-label="乑 yín, crowd: Three people together."><span class="zi">乑</span><span class="pinyin">yín</span><span class="gloss">crowd</span><span class="variant">also 㐺</span><span class="story">Three people together.</span></a>
+            <a class="char-card" href="#" aria-label="㜽 zǐ, child: The round back of a head, a newborn baby."><span class="zi">㜽</span><span class="pinyin">zǐ</span><span class="gloss">child</span><span class="story">The round back of a head, a newborn baby.</span></a>
+            <a class="char-card" href="#" aria-label="禸 róu, lower body: A swaying lower body."><span class="zi">禸</span><span class="pinyin">róu</span><span class="gloss">lower body</span><span class="story">A swaying lower body.</span></a>
+            <a class="char-card" href="#" aria-label="尢 yóu, twisted: A person with a twisted body."><span class="zi">尢</span><span class="pinyin">yóu</span><span class="gloss">twisted</span><span class="story">A person with a twisted body.</span></a>
+            <a class="char-card" href="#" aria-label="巴 bā, curled: A person curled up kneeling on the ground."><span class="zi">巴</span><span class="pinyin">bā</span><span class="gloss">curled</span><span class="story">A person curled up kneeling on the ground.</span></a>
+            <a class="char-card" href="#" aria-label="臽 xiàn, trap: A person falling into a pit."><span class="zi">臽</span><span class="pinyin">xiàn</span><span class="gloss">trap</span><span class="story">A person falling into a pit.</span></a>
+            <a class="char-card" href="#" aria-label="疌 jié, climb: A person climbing a tree with hands and feet."><span class="zi">疌</span><span class="pinyin">jié</span><span class="gloss">climb</span><span class="story">A person climbing a tree with hands and feet.</span></a>
+            <a class="char-card" href="#" aria-label="丮 jǐ, hold: Two hands holding and managing an object."><span class="zi">丮</span><span class="pinyin">jǐ</span><span class="gloss">hold</span><span class="story">Two hands holding and managing an object.</span></a>
+            <a class="char-card" href="#" aria-label="叚 jiǎ, brace: Two hands braced in front, body leaning like a shrimp."><span class="zi">叚</span><span class="pinyin">jiǎ</span><span class="gloss">brace</span><span class="story">Two hands braced in front, body leaning like a shrimp.</span></a>
+            <a class="char-card" href="#" aria-label="寽 lǜ, give: A hand passing something to another hand."><span class="zi">寽</span><span class="pinyin">lǜ</span><span class="gloss">give</span><span class="story">A hand passing something to another hand.</span></a>
+            <a class="char-card" href="#" aria-label="乇 tuō, hold flat: A palm held flat to support an object."><span class="zi">乇</span><span class="pinyin">tuō</span><span class="gloss">hold flat</span><span class="story">A palm held flat to support an object.</span></a>
+            <a class="char-card" href="#" aria-label="文 wén, pattern: An ancient carved figure of a person facing forward."><span class="zi">文</span><span class="pinyin">wén</span><span class="gloss">pattern</span><span class="story">An ancient carved figure of a person facing forward.</span></a>
+            <a class="char-card" href="#" aria-label="主 zhǔ, lamp: A lamp stand with a fire tray on top."><span class="zi">主</span><span class="pinyin">zhǔ</span><span class="gloss">lamp</span><span class="story">A lamp stand with a fire tray on top.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-tools">
+          <h3>Tools, weapons &amp; crafts <span class="count">36</span></h3>
+          <p class="hint">Weapons, farm tools, vehicles and crafted things.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="干 gàn, shield · trunk: A forked branch used to support or defend."><span class="zi">干</span><span class="pinyin">gàn</span><span class="gloss">shield · trunk</span><span class="story">A forked branch used to support or defend.</span></a>
+            <a class="char-card" href="#" aria-label="刀 dāo, knife: A small blade shaped like a finger."><span class="zi">刀</span><span class="pinyin">dāo</span><span class="gloss">knife</span><span class="story">A small blade shaped like a finger.</span></a>
+            <a class="char-card" href="#" aria-label="刃 rèn, blade: The sharp edge or tip of a knife."><span class="zi">刃</span><span class="pinyin">rèn</span><span class="gloss">blade</span><span class="story">The sharp edge or tip of a knife.</span></a>
+            <a class="char-card" href="#" aria-label="刅 chuāng, blade edge: A variant of 刃, with sparks at the edge."><span class="zi">刅</span><span class="pinyin">chuāng</span><span class="gloss">blade edge</span><span class="story">A variant of 刃, with sparks at the edge.</span></a>
+            <a class="char-card" href="#" aria-label="畀 bì, blunt arrow: A smoothed, blunt arrowhead."><span class="zi">畀</span><span class="pinyin">bì</span><span class="gloss">blunt arrow</span><span class="story">A smoothed, blunt arrowhead.</span></a>
+            <a class="char-card" href="#" aria-label="工 gōng, tool: A carpenter&#x27;s joint peg used for assembly."><span class="zi">工</span><span class="pinyin">gōng</span><span class="gloss">tool</span><span class="story">A carpenter&#x27;s joint peg used for assembly.</span></a>
+            <a class="char-card" href="#" aria-label="乃 nǎi, bow curve: The arc of a parabola, like a bow."><span class="zi">乃</span><span class="pinyin">nǎi</span><span class="gloss">bow curve</span><span class="story">The arc of a parabola, like a bow.</span></a>
+            <a class="char-card" href="#" aria-label="弓 gōng, bow: The curved body of an archer&#x27;s bow."><span class="zi">弓</span><span class="pinyin">gōng</span><span class="gloss">bow</span><span class="story">The curved body of an archer&#x27;s bow.</span></a>
+            <a class="char-card" href="#" aria-label="矢 shǐ, arrow: An arrow with a feather-like tail."><span class="zi">矢</span><span class="pinyin">shǐ</span><span class="gloss">arrow</span><span class="story">An arrow with a feather-like tail.</span></a>
+            <a class="char-card" href="#" aria-label="戈 gē, sickle: A reaping sickle mounted on a handle."><span class="zi">戈</span><span class="pinyin">gē</span><span class="gloss">sickle</span><span class="story">A reaping sickle mounted on a handle.</span></a>
+            <a class="char-card" href="#" aria-label="戉 yuè, axe: A round hammer or axe on a handle."><span class="zi">戉</span><span class="pinyin">yuè</span><span class="gloss">axe</span><span class="story">A round hammer or axe on a handle.</span></a>
+            <a class="char-card" href="#" aria-label="我 wǒ, fork: A fork made of posts fixed on a wooden handle."><span class="zi">我</span><span class="pinyin">wǒ</span><span class="gloss">fork</span><span class="story">A fork made of posts fixed on a wooden handle.</span></a>
+            <a class="char-card" href="#" aria-label="矛 máo, spear: A hand-held spear or javelin."><span class="zi">矛</span><span class="pinyin">máo</span><span class="gloss">spear</span><span class="story">A hand-held spear or javelin.</span></a>
+            <a class="char-card" href="#" aria-label="斤 jīn, axe: A flat-bladed axe with a curved handle."><span class="zi">斤</span><span class="pinyin">jīn</span><span class="gloss">axe</span><span class="story">A flat-bladed axe with a curved handle.</span></a>
+            <a class="char-card" href="#" aria-label="斗 dòu, waterwheel: A turning waterwheel with a supporting axle."><span class="zi">斗</span><span class="pinyin">dòu</span><span class="gloss">waterwheel</span><span class="story">A turning waterwheel with a supporting axle.</span></a>
+            <a class="char-card" href="#" aria-label="勺 sháo, ladle: A small dipper that gathers towards its centre."><span class="zi">勺</span><span class="pinyin">sháo</span><span class="gloss">ladle</span><span class="story">A small dipper that gathers towards its centre.</span></a>
+            <a class="char-card" href="#" aria-label="尞 liào, ribs · spokes: Umbrella ribs or bicycle spokes radiating out."><span class="zi">尞</span><span class="pinyin">liào</span><span class="gloss">ribs · spokes</span><span class="story">Umbrella ribs or bicycle spokes radiating out.</span></a>
+            <a class="char-card" href="#" aria-label="戹 è, yoke part: A chariot part that fits around a horse&#x27;s neck."><span class="zi">戹</span><span class="pinyin">è</span><span class="gloss">yoke part</span><span class="story">A chariot part that fits around a horse&#x27;s neck.</span></a>
+            <a class="char-card" href="#" aria-label="弋 yì, stake: A stake driven into and fixed in the ground."><span class="zi">弋</span><span class="pinyin">yì</span><span class="gloss">stake</span><span class="story">A stake driven into and fixed in the ground.</span></a>
+            <a class="char-card" href="#" aria-label="乂 yì, crossed sticks: Two counting rods crossing in the middle."><span class="zi">乂</span><span class="pinyin">yì</span><span class="gloss">crossed sticks</span><span class="story">Two counting rods crossing in the middle.</span></a>
+            <a class="char-card" href="#" aria-label="戊 wù, broad axe: A broad-headed axe on a wooden handle."><span class="zi">戊</span><span class="pinyin">wù</span><span class="gloss">broad axe</span><span class="story">A broad-headed axe on a wooden handle.</span></a>
+            <a class="char-card" href="#" aria-label="己 jǐ, thread: Needle thread moving up and down in sewing."><span class="zi">己</span><span class="pinyin">jǐ</span><span class="gloss">thread</span><span class="story">Needle thread moving up and down in sewing.</span></a>
+            <a class="char-card" href="#" aria-label="午 wǔ, needle: A tiny needle or small stick."><span class="zi">午</span><span class="pinyin">wǔ</span><span class="gloss">needle</span><span class="story">A tiny needle or small stick.</span></a>
+            <a class="char-card" href="#" aria-label="由 yóu, flute: A flute with a small hole."><span class="zi">由</span><span class="pinyin">yóu</span><span class="gloss">flute</span><span class="story">A flute with a small hole.</span></a>
+            <a class="char-card" href="#" aria-label="玄 xuán, silk cord: Twisted and braided silk or rope."><span class="zi">玄</span><span class="pinyin">xuán</span><span class="gloss">silk cord</span><span class="story">Twisted and braided silk or rope.</span></a>
+            <a class="char-card" href="#" aria-label="幻 huàn, thin thread: Silk drawn to one side until it becomes thin."><span class="zi">幻</span><span class="pinyin">huàn</span><span class="gloss">thin thread</span><span class="story">Silk drawn to one side until it becomes thin.</span></a>
+            <a class="char-card" href="#" aria-label="㡭 jì, joined thread: Two lengths of silk joined end to end."><span class="zi">㡭</span><span class="pinyin">jì</span><span class="gloss">joined thread</span><span class="story">Two lengths of silk joined end to end.</span></a>
+            <a class="char-card" href="#" aria-label="甬 yǒng, bell: A hanging bell or chime that sounds far away."><span class="zi">甬</span><span class="pinyin">yǒng</span><span class="gloss">bell</span><span class="story">A hanging bell or chime that sounds far away.</span></a>
+            <a class="char-card" href="#" aria-label="臿 chā, shovel: Two hands pushing a spade into the ground."><span class="zi">臿</span><span class="pinyin">chā</span><span class="gloss">shovel</span><span class="story">Two hands pushing a spade into the ground.</span></a>
+            <a class="char-card" href="#" aria-label="圭 guī, sword: A pointed, straight sword with a short hilt."><span class="zi">圭</span><span class="pinyin">guī</span><span class="gloss">sword</span><span class="story">A pointed, straight sword with a short hilt.</span></a>
+            <a class="char-card" href="#" aria-label="幸 xìng, handcuffs: A device that locks around the hands."><span class="zi">幸</span><span class="pinyin">xìng</span><span class="gloss">handcuffs</span><span class="story">A device that locks around the hands.</span></a>
+            <a class="char-card" href="#" aria-label="車 chē, chariot: A cart with two wheels."><span class="zi">車</span><span class="pinyin">chē</span><span class="gloss">chariot</span><span class="variant">also 车</span><span class="story">A cart with two wheels.</span></a>
+            <a class="char-card" href="#" aria-label="輦 niǎn, carriage: A carriage stopped with its driver beside the horses."><span class="zi">輦</span><span class="pinyin">niǎn</span><span class="gloss">carriage</span><span class="variant">also 辇</span><span class="story">A carriage stopped with its driver beside the horses.</span></a>
+            <a class="char-card" href="#" aria-label="兩 liǎng, shafts: The two shafts of a chariot for harnessing horses."><span class="zi">兩</span><span class="pinyin">liǎng</span><span class="gloss">shafts</span><span class="variant">also 两</span><span class="story">The two shafts of a chariot for harnessing horses.</span></a>
+            <a class="char-card" href="#" aria-label="串 chuàn, axle: Two wheels strung on a single axle."><span class="zi">串</span><span class="pinyin">chuàn</span><span class="gloss">axle</span><span class="story">Two wheels strung on a single axle.</span></a>
+            <a class="char-card" href="#" aria-label="革 gé, hide: Shed cicada skin, snakeskin or shell."><span class="zi">革</span><span class="pinyin">gé</span><span class="gloss">hide</span><span class="story">Shed cicada skin, snakeskin or shell.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-vessels">
+          <h3>Vessels, containers &amp; ornaments <span class="count">34</span></h3>
+          <p class="hint">Pots, bowls, baskets, beads and things that hold.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="玉 yù, jade: Beads strung together on a thread."><span class="zi">玉</span><span class="pinyin">yù</span><span class="gloss">jade</span><span class="story">Beads strung together on a thread.</span></a>
+            <a class="char-card" href="#" aria-label="于 yú, beads: Beads threaded on a string."><span class="zi">于</span><span class="pinyin">yú</span><span class="gloss">beads</span><span class="story">Beads threaded on a string.</span></a>
+            <a class="char-card" href="#" aria-label="凵 kǎn, basin: A basin, bowl or pit with an opening."><span class="zi">凵</span><span class="pinyin">kǎn</span><span class="gloss">basin</span><span class="story">A basin, bowl or pit with an opening.</span></a>
+            <a class="char-card" href="#" aria-label="冊 cè, book: Bamboo slips laid side by side."><span class="zi">冊</span><span class="pinyin">cè</span><span class="gloss">book</span><span class="variant">also 册</span><span class="story">Bamboo slips laid side by side.</span></a>
+            <a class="char-card" href="#" aria-label="束 shù, bundle: A package tied at both ends."><span class="zi">束</span><span class="pinyin">shù</span><span class="gloss">bundle</span><span class="story">A package tied at both ends.</span></a>
+            <a class="char-card" href="#" aria-label="東 dōng, bundle · east: A bundle tied at both ends."><span class="zi">東</span><span class="pinyin">dōng</span><span class="gloss">bundle · east</span><span class="variant">also 东</span><span class="story">A bundle tied at both ends.</span></a>
+            <a class="char-card" href="#" aria-label="舟 zhōu, boat: A vessel that carries people over water."><span class="zi">舟</span><span class="pinyin">zhōu</span><span class="gloss">boat</span><span class="story">A vessel that carries people over water.</span></a>
+            <a class="char-card" href="#" aria-label="鬲 gé, pot: A clay cooking pot supported by legs."><span class="zi">鬲</span><span class="pinyin">gé</span><span class="gloss">pot</span><span class="story">A clay cooking pot supported by legs.</span></a>
+            <a class="char-card" href="#" aria-label="鼎 dǐng, cauldron: A heavy metal pot on legs, used as a ritual vessel."><span class="zi">鼎</span><span class="pinyin">dǐng</span><span class="gloss">cauldron</span><span class="story">A heavy metal pot on legs, used as a ritual vessel.</span></a>
+            <a class="char-card" href="#" aria-label="豆 dòu, drum stand: A stool or drum with a base and a body on top."><span class="zi">豆</span><span class="pinyin">dòu</span><span class="gloss">drum stand</span><span class="story">A stool or drum with a base and a body on top.</span></a>
+            <a class="char-card" href="#" aria-label="皿 mǐn, basin: A bowl or dish with an open hollow."><span class="zi">皿</span><span class="pinyin">mǐn</span><span class="gloss">basin</span><span class="story">A bowl or dish with an open hollow.</span></a>
+            <a class="char-card" href="#" aria-label="爵 jué, wine cup: A wine cup with two pointed lips, held in the hand."><span class="zi">爵</span><span class="pinyin">jué</span><span class="gloss">wine cup</span><span class="story">A wine cup with two pointed lips, held in the hand.</span></a>
+            <a class="char-card" href="#" aria-label="奠 diàn, stand: A stand for a wine jar, a base beneath an object."><span class="zi">奠</span><span class="pinyin">diàn</span><span class="gloss">stand</span><span class="story">A stand for a wine jar, a base beneath an object.</span></a>
+            <a class="char-card" href="#" aria-label="久 jiǔ, pouring vessel: A hinged vessel that tilts to pour or catch water."><span class="zi">久</span><span class="pinyin">jiǔ</span><span class="gloss">pouring vessel</span><span class="story">A hinged vessel that tilts to pour or catch water.</span></a>
+            <a class="char-card" href="#" aria-label="盥 guàn, wash basin: Hands washing inside a basin."><span class="zi">盥</span><span class="pinyin">guàn</span><span class="gloss">wash basin</span><span class="story">Hands washing inside a basin.</span></a>
+            <a class="char-card" href="#" aria-label="壺 hú, kettle: A water kettle with a handle."><span class="zi">壺</span><span class="pinyin">hú</span><span class="gloss">kettle</span><span class="variant">also 壶</span><span class="story">A water kettle with a handle.</span></a>
+            <a class="char-card" href="#" aria-label="酉 yǒu, wine jar: A pointed-bottom, cone-shaped wine bottle."><span class="zi">酉</span><span class="pinyin">yǒu</span><span class="gloss">wine jar</span><span class="story">A pointed-bottom, cone-shaped wine bottle.</span></a>
+            <a class="char-card" href="#" aria-label="匚 fāng, box: A wooden box or bamboo basket."><span class="zi">匚</span><span class="pinyin">fāng</span><span class="gloss">box</span><span class="story">A wooden box or bamboo basket.</span></a>
+            <a class="char-card" href="#" aria-label="甾 zāi, basket: A woven basket, bin or bird&#x27;s nest."><span class="zi">甾</span><span class="pinyin">zāi</span><span class="gloss">basket</span><span class="story">A woven basket, bin or bird&#x27;s nest.</span></a>
+            <a class="char-card" href="#" aria-label="其 qí, winnowing basket: A basket with crossing slits for sifting grain."><span class="zi">其</span><span class="pinyin">qí</span><span class="gloss">winnowing basket</span><span class="story">A basket with crossing slits for sifting grain.</span></a>
+            <a class="char-card" href="#" aria-label="离 lí, strainer: A mesh strainer used in frying."><span class="zi">离</span><span class="pinyin">lí</span><span class="gloss">strainer</span><span class="story">A mesh strainer used in frying.</span></a>
+            <a class="char-card" href="#" aria-label="臼 jiù, mortar: A hollow basin or pit with grooves worn by climbing."><span class="zi">臼</span><span class="pinyin">jiù</span><span class="gloss">mortar</span><span class="story">A hollow basin or pit with grooves worn by climbing.</span></a>
+            <a class="char-card" href="#" aria-label="貝 bèi, shell: A bivalve shell that can hold a precious pearl."><span class="zi">貝</span><span class="pinyin">bèi</span><span class="gloss">shell</span><span class="variant">also 贝</span><span class="story">A bivalve shell that can hold a precious pearl.</span></a>
+            <a class="char-card" href="#" aria-label="賏 yīng, necklace: Rows of jade and shell beads hanging at the neck."><span class="zi">賏</span><span class="pinyin">yīng</span><span class="gloss">necklace</span><span class="story">Rows of jade and shell beads hanging at the neck.</span></a>
+            <a class="char-card" href="#" aria-label="貫 guàn, string of shells: Shells and treasures strung on one cord."><span class="zi">貫</span><span class="pinyin">guàn</span><span class="gloss">string of shells</span><span class="variant">also 贯</span><span class="story">Shells and treasures strung on one cord.</span></a>
+            <a class="char-card" href="#" aria-label="毌 guàn, sliced pieces: A piece divided into parts."><span class="zi">毌</span><span class="pinyin">guàn</span><span class="gloss">sliced pieces</span><span class="story">A piece divided into parts.</span></a>
+            <a class="char-card" href="#" aria-label="朋 péng, necklace: Rows of beads like a necklace, or strings of a zither."><span class="zi">朋</span><span class="pinyin">péng</span><span class="gloss">necklace</span><span class="story">Rows of beads like a necklace, or strings of a zither.</span></a>
+            <a class="char-card" href="#" aria-label="彔 lù, filter bag: An object filtered in a bag, with juice dripping below."><span class="zi">彔</span><span class="pinyin">lù</span><span class="gloss">filter bag</span><span class="variant">also 录</span><span class="story">An object filtered in a bag, with juice dripping below.</span></a>
+            <a class="char-card" href="#" aria-label="西 xī, bag: A cloth bag tied at one end."><span class="zi">西</span><span class="pinyin">xī</span><span class="gloss">bag</span><span class="story">A cloth bag tied at one end.</span></a>
+            <a class="char-card" href="#" aria-label="卤 lǔ, bag: A cloth bag tied at one end."><span class="zi">卤</span><span class="pinyin">lǔ</span><span class="gloss">bag</span><span class="story">A cloth bag tied at one end.</span></a>
+            <a class="char-card" href="#" aria-label="厶 sī, bag: A cloth bag, often written as a triangle."><span class="zi">厶</span><span class="pinyin">sī</span><span class="gloss">bag</span><span class="story">A cloth bag, often written as a triangle.</span></a>
+            <a class="char-card" href="#" aria-label="巾 jīn, cloth: A vertical post or a hanging cloth."><span class="zi">巾</span><span class="pinyin">jīn</span><span class="gloss">cloth</span><span class="story">A vertical post or a hanging cloth.</span></a>
+            <a class="char-card" href="#" aria-label="帶 dài, belt: A belt or scarf tied like a rope with loose ends."><span class="zi">帶</span><span class="pinyin">dài</span><span class="gloss">belt</span><span class="variant">also 带</span><span class="story">A belt or scarf tied like a rope with loose ends.</span></a>
+            <a class="char-card" href="#" aria-label="衣 yī, clothing: The shape of a garment worn on the body."><span class="zi">衣</span><span class="pinyin">yī</span><span class="gloss">clothing</span><span class="story">The shape of a garment worn on the body.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-shelter">
+          <h3>Shelter, walls &amp; clothing <span class="count">17</span></h3>
+          <p class="hint">Roofs, doors, walls, mats and garments.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="亼 jí, cover: A hat covering the head, or a lid closing a vessel."><span class="zi">亼</span><span class="pinyin">jí</span><span class="gloss">cover</span><span class="story">A hat covering the head, or a lid closing a vessel.</span></a>
+            <a class="char-card" href="#" aria-label="冃 mào, hat: A hat that covers the head."><span class="zi">冃</span><span class="pinyin">mào</span><span class="gloss">hat</span><span class="story">A hat that covers the head.</span></a>
+            <a class="char-card" href="#" aria-label="宀 mián, roof: A house where people can live."><span class="zi">宀</span><span class="pinyin">mián</span><span class="gloss">roof</span><span class="story">A house where people can live.</span></a>
+            <a class="char-card" href="#" aria-label="良 liáng, bright house: A house open on both sides with doors and light."><span class="zi">良</span><span class="pinyin">liáng</span><span class="gloss">bright house</span><span class="story">A house open on both sides with doors and light.</span></a>
+            <a class="char-card" href="#" aria-label="歺 è, broken house: A ruined house with exposed beams and leaning walls."><span class="zi">歺</span><span class="pinyin">è</span><span class="gloss">broken house</span><span class="variant">also 歹</span><span class="story">A ruined house with exposed beams and leaning walls.</span></a>
+            <a class="char-card" href="#" aria-label="广 guǎng, eaves: A house seen from the side, with only an eave."><span class="zi">广</span><span class="pinyin">guǎng</span><span class="gloss">eaves</span><span class="story">A house seen from the side, with only an eave.</span></a>
+            <a class="char-card" href="#" aria-label="門 mén, gate: Two wooden panels facing each other."><span class="zi">門</span><span class="pinyin">mén</span><span class="gloss">gate</span><span class="variant">also 门</span><span class="story">Two wooden panels facing each other.</span></a>
+            <a class="char-card" href="#" aria-label="戶 hù, door: A single door of a pen or window."><span class="zi">戶</span><span class="pinyin">hù</span><span class="gloss">door</span><span class="variant">also 户</span><span class="story">A single door of a pen or window.</span></a>
+            <a class="char-card" href="#" aria-label="辰 chén, shadow house: A slanted house, like a shadow on the ground."><span class="zi">辰</span><span class="pinyin">chén</span><span class="gloss">shadow house</span><span class="story">A slanted house, like a shadow on the ground.</span></a>
+            <a class="char-card" href="#" aria-label="丙 bǐng, house posts: Legs or posts beneath a house or boiler."><span class="zi">丙</span><span class="pinyin">bǐng</span><span class="gloss">house posts</span><span class="story">Legs or posts beneath a house or boiler.</span></a>
+            <a class="char-card" href="#" aria-label="六 liù, house · six: A house shape, later borrowed for the number six."><span class="zi">六</span><span class="pinyin">liù</span><span class="gloss">house · six</span><span class="story">A house shape, later borrowed for the number six.</span></a>
+            <a class="char-card" href="#" aria-label="井 jǐng, well frame: A wooden frame enclosing a well."><span class="zi">井</span><span class="pinyin">jǐng</span><span class="gloss">well frame</span><span class="story">A wooden frame enclosing a well.</span></a>
+            <a class="char-card" href="#" aria-label="曲 qū, bent wall: A wall folded and bent."><span class="zi">曲</span><span class="pinyin">qū</span><span class="gloss">bent wall</span><span class="story">A wall folded and bent.</span></a>
+            <a class="char-card" href="#" aria-label="乚 yǐn, wall: The shape of a wall."><span class="zi">乚</span><span class="pinyin">yǐn</span><span class="gloss">wall</span><span class="story">The shape of a wall.</span></a>
+            <a class="char-card" href="#" aria-label="爿 pán, planks: Boards nailed together or a woven bamboo mat."><span class="zi">爿</span><span class="pinyin">pán</span><span class="gloss">planks</span><span class="variant">also 片</span><span class="story">Boards nailed together or a woven bamboo mat.</span></a>
+            <a class="char-card" href="#" aria-label="㐁 tiàn, mat: A woven bamboo mat with a repeating texture."><span class="zi">㐁</span><span class="pinyin">tiàn</span><span class="gloss">mat</span><span class="story">A woven bamboo mat with a repeating texture.</span></a>
+            <a class="char-card" href="#" aria-label="几 jǐ, table: A post or table leg."><span class="zi">几</span><span class="pinyin">jǐ</span><span class="gloss">table</span><span class="story">A post or table leg.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-signs">
+          <h3>Numbers, signs &amp; stems <span class="count">23</span></h3>
+          <p class="hint">Numbers, marks, stems and abstract shapes.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="一 yī, one: A level line: the ground, or the number one."><span class="zi">一</span><span class="pinyin">yī</span><span class="gloss">one</span><span class="story">A level line: the ground, or the number one.</span></a>
+            <a class="char-card" href="#" aria-label="上 shàng, above: An object placed above another."><span class="zi">上</span><span class="pinyin">shàng</span><span class="gloss">above</span><span class="story">An object placed above another.</span></a>
+            <a class="char-card" href="#" aria-label="下 xià, below: An object placed below another."><span class="zi">下</span><span class="pinyin">xià</span><span class="gloss">below</span><span class="story">An object placed below another.</span></a>
+            <a class="char-card" href="#" aria-label="三 sān, three: Three counting rods in a row."><span class="zi">三</span><span class="pinyin">sān</span><span class="gloss">three</span><span class="story">Three counting rods in a row.</span></a>
+            <a class="char-card" href="#" aria-label="十 shí, ten: The count of ten fingers, a complete set."><span class="zi">十</span><span class="pinyin">shí</span><span class="gloss">ten</span><span class="story">The count of ten fingers, a complete set.</span></a>
+            <a class="char-card" href="#" aria-label="卅 sà, thirty: Three tens written together."><span class="zi">卅</span><span class="pinyin">sà</span><span class="gloss">thirty</span><span class="story">Three tens written together.</span></a>
+            <a class="char-card" href="#" aria-label="四 sì, four: A circle divided by an inscribed triangle into four parts."><span class="zi">四</span><span class="pinyin">sì</span><span class="gloss">four</span><span class="story">A circle divided by an inscribed triangle into four parts.</span></a>
+            <a class="char-card" href="#" aria-label="七 qī, seven: A root or shoot pushing through the ground."><span class="zi">七</span><span class="pinyin">qī</span><span class="gloss">seven</span><span class="story">A root or shoot pushing through the ground.</span></a>
+            <a class="char-card" href="#" aria-label="八 bā, eight: A line split into two falling halves."><span class="zi">八</span><span class="pinyin">bā</span><span class="gloss">eight</span><span class="story">A line split into two falling halves.</span></a>
+            <a class="char-card" href="#" aria-label="丨 gǔn, pole: A long bamboo pole or stick."><span class="zi">丨</span><span class="pinyin">gǔn</span><span class="gloss">pole</span><span class="story">A long bamboo pole or stick.</span></a>
+            <a class="char-card" href="#" aria-label="丄 shàng, up: An arrow-like mark pointing upward."><span class="zi">丄</span><span class="pinyin">shàng</span><span class="gloss">up</span><span class="story">An arrow-like mark pointing upward.</span></a>
+            <a class="char-card" href="#" aria-label="丅 xià, down: An arrow-like mark pointing downward."><span class="zi">丅</span><span class="pinyin">xià</span><span class="gloss">down</span><span class="story">An arrow-like mark pointing downward.</span></a>
+            <a class="char-card" href="#" aria-label="中 zhōng, centre: The centre of ripples made by a stone in water."><span class="zi">中</span><span class="pinyin">zhōng</span><span class="gloss">centre</span><span class="story">The centre of ripples made by a stone in water.</span></a>
+            <a class="char-card" href="#" aria-label="小 xiǎo, small: Something tapering upward, or a tiny dot."><span class="zi">小</span><span class="pinyin">xiǎo</span><span class="gloss">small</span><span class="story">Something tapering upward, or a tiny dot.</span></a>
+            <a class="char-card" href="#" aria-label="少 shǎo, few: Small drops and grains."><span class="zi">少</span><span class="pinyin">shǎo</span><span class="gloss">few</span><span class="story">Small drops and grains.</span></a>
+            <a class="char-card" href="#" aria-label="丩 jiū, hook: Two hooks joined like a chain."><span class="zi">丩</span><span class="pinyin">jiū</span><span class="gloss">hook</span><span class="story">Two hooks joined like a chain.</span></a>
+            <a class="char-card" href="#" aria-label="互 hù, hooks: The same pair of linked hooks, later written 互."><span class="zi">互</span><span class="pinyin">hù</span><span class="gloss">hooks</span><span class="story">The same pair of linked hooks, later written 互.</span></a>
+            <a class="char-card" href="#" aria-label="囧 jiǒng, wheel: A round cart wheel, or a swirling whirlpool."><span class="zi">囧</span><span class="pinyin">jiǒng</span><span class="gloss">wheel</span><span class="story">A round cart wheel, or a swirling whirlpool.</span></a>
+            <a class="char-card" href="#" aria-label="亘 gèn, spiral: A curling, whirling shape."><span class="zi">亘</span><span class="pinyin">gèn</span><span class="gloss">spiral</span><span class="story">A curling, whirling shape.</span></a>
+            <a class="char-card" href="#" aria-label="凡 fán, enclose: Something enclosing and merging several objects."><span class="zi">凡</span><span class="pinyin">fán</span><span class="gloss">enclose</span><span class="story">Something enclosing and merging several objects.</span></a>
+            <a class="char-card" href="#" aria-label="亞 yà, incomplete: A square with missing corners."><span class="zi">亞</span><span class="pinyin">yà</span><span class="gloss">incomplete</span><span class="variant">also 亚</span><span class="story">A square with missing corners.</span></a>
+            <a class="char-card" href="#" aria-label="丁 dīng, solid: A solid, filled-in object."><span class="zi">丁</span><span class="pinyin">dīng</span><span class="gloss">solid</span><span class="story">A solid, filled-in object.</span></a>
+            <a class="char-card" href="#" aria-label="冂 jiōng, inward: Pushing inward from both sides."><span class="zi">冂</span><span class="pinyin">jiōng</span><span class="gloss">inward</span><span class="story">Pushing inward from both sides.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-actions">
+          <h3>Actions &amp; movement <span class="count">5</span></h3>
+          <p class="hint">Small scenes of movement and change.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="歮 sè, limp: Three legs instead of four, moving with a limp."><span class="zi">歮</span><span class="pinyin">sè</span><span class="gloss">limp</span><span class="story">Three legs instead of four, moving with a limp.</span></a>
+            <a class="char-card" href="#" aria-label="夊 suī, turn back: A foot turned towards the walker, stepping back."><span class="zi">夊</span><span class="pinyin">suī</span><span class="gloss">turn back</span><span class="story">A foot turned towards the walker, stepping back.</span></a>
+            <a class="char-card" href="#" aria-label="糞 fèn, sweep: Sweeping waste into a basket with a broom."><span class="zi">糞</span><span class="pinyin">fèn</span><span class="gloss">sweep</span><span class="variant">also 粪</span><span class="story">Sweeping waste into a basket with a broom.</span></a>
+            <a class="char-card" href="#" aria-label="炙 zhì, roast: Meat roasting over a fire."><span class="zi">炙</span><span class="pinyin">zhì</span><span class="gloss">roast</span><span class="story">Meat roasting over a fire.</span></a>
+            <a class="char-card" href="#" aria-label="丑 chǒu, twist: Twisting an object with the hand."><span class="zi">丑</span><span class="pinyin">chǒu</span><span class="gloss">twist</span><span class="story">Twisting an object with the hand.</span></a>
+          </div>
+        </div>
+
+        <div class="group" id="g-rare">
+          <h3>Rare &amp; uncertain forms <span class="count">2</span></h3>
+          <p class="hint">Forms whose reading or classification is uncertain.</p>
+          <div class="grid">
+            <a class="char-card" href="#" aria-label="䇂 qiān, rare form: A variant noted as &quot;see 辛&quot;."><span class="zi">䇂</span><span class="pinyin">qiān</span><span class="gloss">rare form</span><span class="story">A variant noted as &quot;see 辛&quot;.</span></a>
+            <a class="char-card" href="#" aria-label="? —, uncertain: A wall-like form whose reading is uncertain."><span class="zi">?</span><span class="pinyin">—</span><span class="gloss">uncertain</span><span class="story">A wall-like form whose reading is uncertain.</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="method" aria-labelledby="method-title">
+        <div class="section-head">
+          <h2 id="method-title">How to read a character story</h2>
+          <p>A simple routine for learning Chinese characters without rote copying.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div><h3>Look at the oldest shape</h3><p>Begin with the oracle bone or bronze form: what object does it draw?</p></div></div>
+          <div class="step"><div><h3>Connect picture to meaning</h3><p>Ask what the picture points to — a horn, a foot, a ripple — and how that meaning grew.</p></div></div>
+          <div class="step"><div><h3>Read it in a word</h3><p>Finish with pinyin and a real word, so the story becomes a usable vocabulary item.</p></div></div>
+        </div>
+        <aside class="note">
+          Note: the interpretations on this site are the author's personal reading of the glyphs,
+          not the mainstream academic consensus. They are meant as memory aids for learners.
+        </aside>
+      </section>
+
+      <section class="block" id="faq" aria-labelledby="faq-title">
+        <div class="section-head">
+          <h2 id="faq-title">Learning Chinese: quick answers</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><div><h3>Are all Chinese characters pictographs?</h3><p>No. Pictographs are the oldest layer. Many later characters combine a meaning part and a sound part, and knowing the pictographs makes those combinations much easier to learn.</p></div></div>
+          <div class="step"><div><h3>Do I need to know oracle bone script?</h3><p>No. The ancient forms are used here as a shortcut to understanding modern characters, not as a separate writing system to memorise.</p></div></div>
+          <div class="step"><div><h3>Where should I start?</h3><p>Start with 日, 人, 口, 木 and 羊 — good first characters — then follow the related characters from each story.</p></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      <p>© 2026 解字机 AK · Chinese character stories and oracle bone etymology.</p>
+      <p><a href="#top">Back to top</a> · <a href="#">中文版本</a></p>
+    </footer>
+  </div>
+</body>
+</html>
