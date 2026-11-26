@@ -12,10 +12,45 @@
   <meta name="robots" content="index, follow" data-page-node-id="c85AzEubGa6hn590CctBj5" />
 
   <!-- Canonical & hreflang -->
-  <link rel="canonical" href="https://zhangxiaov.github.io/" data-page-node-id="ufJAAt5wgaGvzFTOjxV25H" />
-  <link rel="alternate" hreflang="en" href="https://zhangxiaov.github.io/" data-page-node-id="CdDsK4gUckx59QiS3muDHs" />
-  <link rel="alternate" hreflang="x-default" href="https://zhangxiaov.github.io/" data-page-node-id="XgKBlRttXTeKYBh1UBdEK0" />
-
+  <link rel="canonical" href="https://zhangxiaov.github.io/" />
+  <link rel="alternate" hreflang="es" href="https://zhangxiaov.github.io/index_es.html" />
+  <link rel="alternate" hreflang="de" href="https://zhangxiaov.github.io/index_de.html" />
+  <link rel="alternate" hreflang="fr" href="https://zhangxiaov.github.io/index_fr.html" />
+  <link rel="alternate" hreflang="pt" href="https://zhangxiaov.github.io/index_pt.html" />
+  <link rel="alternate" hreflang="it" href="https://zhangxiaov.github.io/index_it.html" />
+  <link rel="alternate" hreflang="ru" href="https://zhangxiaov.github.io/index_ru.html" />
+  <link rel="alternate" hreflang="ja" href="https://zhangxiaov.github.io/index_ja.html" />
+  <link rel="alternate" hreflang="ko" href="https://zhangxiaov.github.io/index_ko.html" />
+  <link rel="alternate" hreflang="vi" href="https://zhangxiaov.github.io/index_vi.html" />
+  <link rel="alternate" hreflang="th" href="https://zhangxiaov.github.io/index_th.html" />
+  <link rel="alternate" hreflang="id" href="https://zhangxiaov.github.io/index_id.html" />
+  <link rel="alternate" hreflang="ar" href="https://zhangxiaov.github.io/index_ar.html" />
+  <link rel="alternate" hreflang="hi" href="https://zhangxiaov.github.io/index_hi.html" />
+  <link rel="alternate" hreflang="tr" href="https://zhangxiaov.github.io/index_tr.html" />
+  <link rel="alternate" hreflang="ms" href="https://zhangxiaov.github.io/index_ms.html" />
+  <link rel="alternate" hreflang="fil" href="https://zhangxiaov.github.io/index_fil.html" />
+  <link rel="alternate" hreflang="bn" href="https://zhangxiaov.github.io/index_bn.html" />
+  <link rel="alternate" hreflang="fa" href="https://zhangxiaov.github.io/index_fa.html" />
+  <link rel="alternate" hreflang="ur" href="https://zhangxiaov.github.io/index_ur.html" />
+  <link rel="alternate" hreflang="nl" href="https://zhangxiaov.github.io/index_nl.html" />
+  <link rel="alternate" hreflang="pl" href="https://zhangxiaov.github.io/index_pl.html" />
+  <link rel="alternate" hreflang="uk" href="https://zhangxiaov.github.io/index_uk.html" />
+  <link rel="alternate" hreflang="sv" href="https://zhangxiaov.github.io/index_sv.html" />
+  <link rel="alternate" hreflang="da" href="https://zhangxiaov.github.io/index_da.html" />
+  <link rel="alternate" hreflang="no" href="https://zhangxiaov.github.io/index_no.html" />
+  <link rel="alternate" hreflang="fi" href="https://zhangxiaov.github.io/index_fi.html" />
+  <link rel="alternate" hreflang="cs" href="https://zhangxiaov.github.io/index_cs.html" />
+  <link rel="alternate" hreflang="hu" href="https://zhangxiaov.github.io/index_hu.html" />
+  <link rel="alternate" hreflang="el" href="https://zhangxiaov.github.io/index_el.html" />
+  <link rel="alternate" hreflang="km" href="https://zhangxiaov.github.io/index_km.html" />
+  <link rel="alternate" hreflang="lo" href="https://zhangxiaov.github.io/index_lo.html" />
+  <link rel="alternate" hreflang="my" href="https://zhangxiaov.github.io/index_my.html" />
+  <link rel="alternate" hreflang="ta" href="https://zhangxiaov.github.io/index_ta.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://zhangxiaov.github.io/index_zh-hant.html" />
+  <link rel="alternate" hreflang="mn" href="https://zhangxiaov.github.io/index_mn.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://zhangxiaov.github.io/index_cn.html" />
+  <link rel="alternate" hreflang="en" href="https://zhangxiaov.github.io/" />
+  <link rel="alternate" hreflang="x-default" href="https://zhangxiaov.github.io/" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" data-page-node-id="pzF8HEFcHE5FFvpCY3MkCb" />
   <meta property="og:site_name" content="解字机 AK · Character Stories" data-page-node-id="rJOAUJr02Hy2GDZ15AXFHc" />
@@ -315,6 +350,20 @@
       .hero-card { max-width: 320px; margin: 0 auto; }
       section.block { padding: 24px 18px; }
     }
+    .lang-picker { position: relative; display: inline-block; }
+    .lang-picker summary { cursor: pointer; color: var(--muted); font-size: .9rem; }
+    .lang-picker .lang-list {
+      position: absolute; right: 0; top: 1.8rem; z-index: 20;
+      display: none; flex-direction: column; gap: 2px;
+      max-height: 22rem; overflow: auto;
+      padding: 8px; background: var(--paper); border: 1px solid var(--line);
+      border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+    .lang-picker[open] .lang-list { display: flex; }
+    .lang-picker .lang-list a {
+      padding: 4px 8px; border-radius: 6px; color: var(--muted); text-decoration: none; white-space: nowrap;
+    }
+    .lang-picker .lang-list a:hover { background: var(--accent-soft); color: var(--accent); }
   </style>
 </head>
 <body id="top" data-page-node-id="pT8aHC61n1S0MVnTpJcpZk">
@@ -327,8 +376,48 @@
         <a href="#characters" data-page-node-id="qp9iJ25E2CqpafbNoGuQQG">Pictographs</a>
         <a href="#method" data-page-node-id="qAEIBiC6yZatp9LZvR3KU9">How it works</a>
         <a href="#faq" data-page-node-id="CYt88LBe8EHYtRbdOyXgH8">FAQ</a>
-        <a href="#" class="active" lang="en" data-page-node-id="5AjWMDkGYbN8XzEaMgZzgx">English</a>
-        <a href="#" lang="zh" data-page-node-id="Z6GXxUYOE5idRSRfMOmeFl">中文</a>
+<a href="/" class="active" lang="en">English</a>
+        <details class="lang-picker">
+          <summary>Other languages ▾</summary>
+          <nav class="lang-list" aria-label="Language">
+        <a href="index_es.html" lang="es">Español</a>
+        <a href="index_de.html" lang="de">Deutsch</a>
+        <a href="index_fr.html" lang="fr">Français</a>
+        <a href="index_pt.html" lang="pt">Português</a>
+        <a href="index_it.html" lang="it">Italiano</a>
+        <a href="index_ru.html" lang="ru">Русский язык</a>
+        <a href="index_ja.html" lang="ja">日本語</a>
+        <a href="index_ko.html" lang="ko">한국어</a>
+        <a href="index_vi.html" lang="vi">Tiếng Việt</a>
+        <a href="index_th.html" lang="th">ภาษาไทย</a>
+        <a href="index_id.html" lang="id">Bahasa Indonesia</a>
+        <a href="index_ar.html" lang="ar">العربية</a>
+        <a href="index_hi.html" lang="hi">हिन्दी</a>
+        <a href="index_tr.html" lang="tr">Türkçe</a>
+        <a href="index_ms.html" lang="ms">Bahasa Melayu</a>
+        <a href="index_fil.html" lang="fil">Tagalog</a>
+        <a href="index_bn.html" lang="bn">বাংলা</a>
+        <a href="index_fa.html" lang="fa">فارسی</a>
+        <a href="index_ur.html" lang="ur">اردو</a>
+        <a href="index_nl.html" lang="nl">Nederlands</a>
+        <a href="index_pl.html" lang="pl">Polski</a>
+        <a href="index_uk.html" lang="uk">Українська</a>
+        <a href="index_sv.html" lang="sv">Svenska</a>
+        <a href="index_da.html" lang="da">Dansk</a>
+        <a href="index_no.html" lang="no">Norsk</a>
+        <a href="index_fi.html" lang="fi">Suomi</a>
+        <a href="index_cs.html" lang="cs">Čeština</a>
+        <a href="index_hu.html" lang="hu">Magyar</a>
+        <a href="index_el.html" lang="el">Ελληνικά</a>
+        <a href="index_km.html" lang="km">ភាសាខ្មែរ</a>
+        <a href="index_lo.html" lang="lo">ພາສາລາວ</a>
+        <a href="index_my.html" lang="my">မြန်မာစာ</a>
+        <a href="index_ta.html" lang="ta">தமிழ்</a>
+        <a href="index_zh-hant.html" lang="zh-hant">繁體中文</a>
+        <a href="index_mn.html" lang="mn">Монгол</a>
+        <a href="index_cn.html" lang="cn">简体中文</a>
+          </nav>
+        </details>
       </nav>
     </header>
 
